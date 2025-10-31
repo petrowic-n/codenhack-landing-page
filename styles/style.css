@@ -12,7 +12,9 @@
   --color-light: rgb(209, 213, 219);
   --color-dark: rgb(24, 24, 27);
   --color-green: rgb(163, 230, 53);
+  --color-lime: rgb(94, 165, 0);
   --color-blue: rgb(56, 189, 248);
+  --color-gray-text: rgb(209, 213, 219);
 
   /* sizes */
   --size-xxs: 0.5rem;

@@ -1,8 +1,11 @@
 /*==== BUTTONS ====*/
 .btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-family-buttons);
   font-weight: 500;
-  font-size: var(var(--size-base));
+  font-size: var(--size-base);
   text-decoration: none;
   background-color: var(--color-green);
   padding: 0.5em 1em;
@@ -25,12 +28,15 @@
 }
 
 .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-family-buttons);
   font-weight: 500;
   font-size: var(--size-base);
   text-decoration: none;
-  background-color: var(--color-green);
-  padding: 1em 0.5em;
+  background-color: var(--color-blue);
+  padding: 0.5em 1em;
   clip-path: polygon(
     0 0,
     calc(100% - 20px) 0,
@@ -67,12 +73,30 @@
 .container {
   width: 100%;
   margin-inline: auto;
-  padding-inline: 0.5rem;
+  padding-inline: 1rem;
   /* border: 1px solid green; */
 }
 
 .section-top {
   padding-top: 4rem;
+}
+
+.main {
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+
+.cyber-grid {
+  background-image: linear-gradient(#84cc161a 1px, #0000 0),
+    linear-gradient(90deg, #84cc161a 1px, #0000 0);
+  background-size: 30px 30px;
+}
+
+h1 {
+  font-family: var(--font-family-headings);
+  font-size: var(--size-4xl);
+  color: var(--color-white);
+  font-weight: 700;
 }
 
 /*==== RESPONSIVE ====*/
@@ -95,6 +119,10 @@
   .container {
     max-width: 768px;
   }
+
+  h1 {
+    font-size: var(--size-5xl);
+  }
 }
 
 /* lg */
@@ -108,6 +136,9 @@
 @media (min-width: 1280px) {
   .container {
     max-width: 1168px;
+  }
+  h1 {
+    font-size: var(--size-6xl);
   }
 }
 

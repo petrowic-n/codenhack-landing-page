@@ -1,0 +1,224 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(163, 230, 53, 0.05);
+  z-index: 10;
+}
+
+.glitch-effect {
+  animation: glitch 3s infinite;
+  position: relative;
+}
+
+.text-primary {
+  color: color-mix(in srgb, var(--color-green) 100%, transparent);
+}
+
+.hero__text {
+  color: var(--color-gray-text);
+  font-size: var(--size-lg);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.bolt-icon,
+.search-icon {
+  font-size: 1.2rem;
+}
+
+.hero__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  z-index: 11;
+}
+
+.hero__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.hero__items {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero__items-icon {
+  color: var(--color-green);
+  font-size: 1.8rem;
+}
+
+.hero__items-text {
+  color: var(--color-white);
+  font-size: var(--size-base);
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero__right {
+  position: relative;
+  border: 1px solid var(--color-green);
+  padding: 0.25rem;
+  border-radius: 8px;
+  overflow: visible;
+  box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
+  /* transform: perspective(1200px) rotateX(-3deg) rotateY(-4deg) scale(1); */
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.hero__right:hover {
+  transform: perspective(1200px) rotateX(-3deg) rotateY(-4deg) scale(1);
+}
+
+.hero__right::before {
+  content: "";
+  height: 15px;
+  position: absolute;
+  width: 15px;
+  border-left: 2px solid var(--color-green);
+  border-top: 2px solid var(--color-green);
+  left: -5px;
+  top: -5px;
+}
+
+.hero__border-top-left {
+  position: absolute;
+  top: calc((0.25rem) * -3);
+  left: calc((0.25rem) * -3);
+  height: calc((0.25rem) * 6);
+  width: calc((0.25rem) * 6);
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-style: solid;
+  border-right: none;
+  border-bottom: none;
+  border-color: color-mix(in srgb, var(--color-green) 100%, transparent);
+}
+
+.hero__border-bottom-right {
+  position: absolute;
+  padding: calc((0.25rem) * 3);
+  border: 1px solid var(--color-lime);
+  border-radius: 0.25rem;
+  bottom: calc((0.25rem) * -4);
+  right: calc((0.25rem) * -4);
+}
+.hero__bottom-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__bottom-code {
+  font-weight: 700;
+  font-size: var(--size-sm);
+  color: color-mix(in srgb, var(--color-green) 100%, transparent);
+}
+
+.hero__bottom-text {
+  color: var(--color-white);
+  font-size: var(--size-sm);
+  font-weight: 700;
+}
+
+.hero__img {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.5em 0 #00f0ff, -0.05em - 0.025em #84cc16;
+  }
+  14% {
+    text-shadow: 0.5em 0 #00f0ff, -0.05em - 0.025em #84cc16;
+  }
+  15% {
+    text-shadow: 0.5em 0 #00f0ff, -0.05em - 0.025em #84cc16;
+  }
+  49% {
+    text-shadow: 0.5em 0 #00f0ff, -0.05em - 0.025em #84cc16;
+  }
+  50% {
+    text-shadow: 0.025em 0.05em #00f0ff, 0.05em 0 #84cc16;
+  }
+  99% {
+    text-shadow: 0.025em 0.05em #00f0ff, 0.05em 0 #84cc16;
+  }
+
+  100% {
+    text-shadow: 0.5em 0 #00f0ff, -0.05em -0.025em #84cc16;
+  }
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+  .hero__right {
+    width: 350px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .hero__text {
+    font-size: var(--size-xl);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .hero__right {
+    width: 500px;
+  }
+  .hero__left {
+    width: 50%;
+  }
+
+  .hero__content {
+    flex-direction: row;
+  }
+
+  .hero__buttons {
+    flex-direction: row;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
