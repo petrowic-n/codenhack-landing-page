@@ -71,7 +71,7 @@
   /* border: 1px solid green; */
 }
 
-.section {
+.section-top {
   padding-top: 4rem;
 }
 
@@ -102,7 +102,6 @@
   .container {
     max-width: 1024px;
   }
-
 }
 
 /* xl */
@@ -114,5 +113,4 @@
 
 /* 2xl */
 @media (min-width: 1536px) {
-  
 }
