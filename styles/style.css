@@ -9,6 +9,8 @@
   /* colors */
   --color-white: rgb(255, 255, 255);
   --color-gray: rgb(43, 43, 43);
+  --color-gray-btn: rgb(39, 39, 42);
+  --color-gray-card: rgb(24, 24, 27);
   --color-light: rgb(209, 213, 219);
   --color-dark: rgb(24, 24, 27);
   --color-green: rgb(163, 230, 53);

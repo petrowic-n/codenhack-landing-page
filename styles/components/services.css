@@ -1,0 +1,14 @@
+.services__card {
+  height: 100%;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+  z-index: 4;
+}
+
+.services__heading {
+  position: relative;
+  z-index: 4;
+}
