@@ -1,0 +1,39 @@
+.mobile-nav {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray);
+  width: 100%;
+  z-index: 999;
+}
+
+.mobile-nav__menu li {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.mobile-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-white);
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
