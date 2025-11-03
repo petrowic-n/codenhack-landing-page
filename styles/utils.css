@@ -93,6 +93,7 @@
   text-transform: uppercase;
   transition: all 0.3s ease;
   margin-top: 4rem;
+  margin-inline: auto;
 }
 
 .btn-third-icon {
