@@ -6,6 +6,8 @@ import "../styles/components/hero.css";
 import "../styles/components/about.css";
 import "../styles/components/services.css";
 import "../styles/components/courses.css";
+import "../styles/components/testimonials.css";
+import "../styles/components/footer.css";
 import "../styles/utils.css";
 
 import mobileNav from "./utils/mobile-nav";
